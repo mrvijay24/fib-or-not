@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{	int n,flag=0;
+	int f1,f2,fib=0;
+	printf("enter the number:\n");
+	scanf("%d",&n);
+	f1=0,f2=1;
+    if(n==0)
+    printf("yes");
+    else if(n==1)
+    printf("yes");
+    else while(fib<=n)
+    {fib=f1+f2;
+    	f1=f2;
+    	f2=fib;
+    	if(fib==n)
+	{printf("yes");
+	flag=1;
+	break;}
+ }
+if(flag==0)
+printf("no");
+}
